@@ -1,0 +1,96 @@
+$color0: #f7f7f7;
+$color1: #DEECC6;
+$color2: #BDD57A;
+$color3: #226900;
+$color4: #333333;
+
+.ramo_background{
+    position: absolute;
+    // z-index: 1;
+}
+
+.tittleContent{
+    text-align: center;
+    font-family: 'Gidole';
+    color: $color4;
+    font-size: 50px;
+}
+
+.initialText{
+    margin-top: 5%;
+}
+
+.textContent{
+    margin-left: 35%;
+    width: 30%;
+    text-align: center;
+    font-family: 'Gidole';
+    color: $color2;
+    font-size: 20px;
+}
+
+.nav{
+    margin-top:3%
+}
+
+.icons{
+    margin-top:2%;
+    margin-left:20%;
+}
+
+.icon{
+    margin-left: 5%;
+    cursor: pointer;
+}
+
+.banner{
+    margin-top:10%;
+}
+
+.car{
+    width: 40%;
+    margin-top:5%;
+    margin-left: 30%;
+    background-color: transparent;
+}
+
+.carous{
+    background-color: transparent;
+}
+
+.bannerTittle{    
+    text-align: center;
+    font-family: 'Allura';
+    color: $color2;
+    font-size: 50px;
+}
+
+.imgs{
+    border-radius: 20px;
+    height: 150px;
+    width: 150px;
+    margin-left: 0;
+    margin-right: auto;
+    display: block;
+}
+.imgTxt{
+    // position: absolute;
+    // margin-top: -125px;
+    // margin-left: 184px;
+}
+
+.quadB{    
+    border-style: solid;
+    border-width: 1px;
+    border-color: $color4;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Gidole';
+    background-color: $color0;
+}
+
+.pad{
+    padding: 0;
+    margin-left: 1%;
+    margin-top: 1%;
+}
