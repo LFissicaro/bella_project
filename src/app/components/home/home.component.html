@@ -1,153 +1,90 @@
 <html>
 
-<div class="ramo_background">
-    <img src="../../../assets/images/ramo2.png">
-</div>
-
-<div class="p-grid p-jc-center nav">
-    <div class="p-col">
-        <div class="tittle tittleContent">
-        </div>
-    </div>
-    <div class="p-col">
-        <div class="tittle tittleContent">
-            BELLA CUCINA
-        </div>
-    </div>
-    <div class="p-col">
-        <div class="tittle icons">
-            <img class="icon" src="../../../assets/icons/bag/1x/outline_shopping_bag_black_24dp.png">
-            <img class="icon" src="../../../assets/icons/user/1x/outline_account_circle_black_24dp.png">
-        </div>
-    </div>
-</div>
-
-<div class="initialText">
-    <div class="textContent">
-        <p>
-            {{introText}}<br><br>
-            {{introText2}}
-        </p>
-    </div>
-</div>
-
-<div class="car">
-    <p-galleria class="carous" [value]="images" [numVisible]="5" [showThumbnails]="true" [showIndicators]="true">
-        <ng-template pTemplate="item" let-item>
-            <img [src]="item.path" style="width: 100%; display: block;" />
-        </ng-template>
-        <ng-template pTemplate="thumbnail" let-item>
-            <div class="p-grid p-nogutter p-justify-center">
-                <img [src]="item.path" style="display: block;" />
+<app-bar></app-bar>
+<section id="sec1">
+    <div class="belt">
+        <div class="p-grid p-jc-center">
+            <div class="p-col">
+                <p>{{introText}}</p>
             </div>
-        </ng-template>
-    </p-galleria>
-</div>
-
-<!-- <div class="banner">
-    <div class="bannerTittle">
-        ALGUNS DOS MAIS PEDIDOS
+        </div>
     </div>
+
+    <div class="headerTittle">
+        <p>Se liga nesses pratos! Os mais pedidos da semana</p>
+    </div>
+
+    <div class="p-grid p-jc-center carousel">
+        <div class="p-col4">
+            <p-galleria [value]="images" [responsiveOptions]="responsiveOptions"
+                [containerStyle]="{'max-width': '640px'}" [numVisible]="5" [showThumbnails]="false"
+                [showIndicators]="false" [changeItemOnIndicatorHover]="true" [circular]="true" [autoPlay]="true"
+                [transitionInterval]="2500">
+
+                <ng-template pTemplate="item" let-item>
+                    <img [src]="item.path" style="width: 100%; display: block;" />
+                </ng-template>
+
+                <ng-template pTemplate="thumbnail" let-item>
+                    <div class="p-grid p-nogutter p-justify-center">
+                        <img [src]="item.path" style="display: block;" />
+                    </div>
+                </ng-template>
+
+            </p-galleria>
+        </div>
+    </div>
+</section>
+<section id="sec2">
+    <div class="packs">
+        <div class="tittle">
+            <p>Confira também os pacotes de compras agendadas</p>
+        </div>
+
+        <div class="p-grid p-jc-center desc">
+
+            <div class="p-col-2 first">
+                <p>PRIMEIRO PRATO</p>
+                <img src="../../../assets/images/comida1.png" style="width: 90%;">
+                <div class="descText">
+                    {{text1}}
+                </div>
+            </div>
+
+            <div class="p-col-2 second">
+                <p>SEGUNDO PRATO</p>
+                <img src="../../../assets/images/comida2.png" style="width: 100%;">
+                <div class="descText">
+                    {{text1}}
+                </div>
+            </div>
+
+            <div class="p-col-2 third">
+                <p>TERCEIRO PRATO</p>
+                <img src="../../../assets/images/comida3.png" style="width: 90%;">
+                <div class="descText">
+                    {{text1}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="sec3">
+<div class="about">
     <div class="p-grid p-jc-center">
-        <div class="p-col-2 pad">
-            <div class="quadB">
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
+        <div class="p-col-5">
+            <div class="aboutTittle">
+                Um pouco sobre o Bella
             </div>
-        </div>
-        <div class="p-col-2 pad">
-            <div class="quadB">
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="p-col-2 pad">
-            <div class="quadB">
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
+            <div class="aboutText">
+                <p>
+                    {{aboutText}}
+                </p>
+                <img src="../../../assets/images/about.png">
             </div>
         </div>
     </div>
-    <div class="p-grid p-jc-center">
-        <div class="p-col-2 pad">
-            <div class="quadB">                
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="p-col-2 pad">
-            <div class="quadB">
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="p-col-2 pad">
-            <div class="quadB">
-
-                <div class="p-grid">
-                    <div class="p-col">
-                        <img class="imgs" src="../../../assets/images/comida1.png">
-                    </div>
-                    <div class="p-col">
-                        <div class="imgTxt">
-                            A MAIS PEDIDA DURANTE 4 SEMANAS SEGUIDAS!
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div> -->
+</div>
+</section>
 
 </html>

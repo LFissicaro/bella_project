@@ -2,6 +2,7 @@ $color0: #f7f7f7;
 $color1: #DEECC6;
 $color2: #BDD57A;
 $color3: #226900;
+$color4: #333333;
 
 @font-face {
     font-family: 'Allura';
@@ -13,11 +14,21 @@ $color3: #226900;
     src: url('../src/assets/fonts/gidole/Gidole-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../src/assets/fonts/opensans/OpenSansCondensed-Light.ttf');
+}
+@font-face {
+  font-family: 'OpenSansItalic';
+  src: url('../src/assets/fonts/opensans/OpenSansCondensed-LightItalic.ttf');
+}
+
 //tira as bordas do navegador
 html
 {
   box-sizing: border-box;
   background-color: #f7f7f7;
+  scroll-behavior: smooth;
 }
 
 *,

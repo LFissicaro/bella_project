@@ -5,92 +5,124 @@ $color3: #226900;
 $color4: #333333;
 
 .ramo_background{
+    top: 29%;
     position: absolute;
-    // z-index: 1;
 }
 
-.tittleContent{
+.headerTittle p{    
     text-align: center;
-    font-family: 'Gidole';
+    margin-top: 2%;
+    margin-left: 20%;
+    width: 60%;
+    font-family: 'Allura'!important;
+    color: $color3;
+    font-size: 65px;
+}
+
+.belt{
+    margin-top: 8%;
+    background-color: $color2;
+    height: 100px;
+    text-align: center;
+    
+    line-height: 90px;
+    text-align: center;
+}
+
+.belt p{
+    font-size: 20px;
     color: $color4;
-    font-size: 50px;
+    font-family: 'Gidole';    
+    
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
 }
 
-.initialText{
-    margin-top: 5%;
+.carousel{
+    background-image: url("../../../assets/images/ramo2.png");
+    background-repeat: no-repeat;
+    background-color: transparent!important;
+    margin-top: 1%;
 }
 
-.textContent{
-    margin-left: 35%;
-    width: 30%;
+h3{
     text-align: center;
-    font-family: 'Gidole';
-    color: $color2;
+    font-family: 'OpenSans'!important;
+    font-size: 30px;
+    color: $color3;
+}
+
+.packs{
+    background-image: url('../../../assets/images/ramo2inv.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: 150px;
+    margin-top: 3%;
+}
+
+.tittle{
+    text-align: center;
+    // font-size: 40px;
+    // font-family: 'Allura';
+    // color: $color4;
+    font-family: 'Allura'!important;
+    color: $color3;
+    font-size: 75px;
+}
+
+.desc{
+    text-align: center;
+    margin-top: 1%;
+}
+
+.descText{
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
     font-size: 20px;
 }
 
-.nav{
-    margin-top:3%
-}
-
-.icons{
-    margin-top:2%;
-    margin-left:20%;
-}
-
-.icon{
-    margin-left: 5%;
-    cursor: pointer;
-}
-
-.banner{
-    margin-top:10%;
-}
-
-.car{
-    width: 40%;
+.desc p{
     margin-top:5%;
-    margin-left: 30%;
-    background-color: transparent;
+    font-family: 'OpenSans';
+    font-size: 30px;
 }
 
-.carous{
-    background-color: transparent;
+.first{
+    background-color: $color2;
 }
 
-.bannerTittle{    
+.second{
+    background-color: $color1;
+    padding: 10px;
+}
+
+.third{
+    background-color: $color2;
+}
+
+.about{
     text-align: center;
-    font-family: 'Allura';
-    color: $color2;
-    font-size: 50px;
+    margin-top: 3%;
+    background-image: url('../../../assets/images/folha.png');
+    background-repeat: no-repeat;
+    background-position-y: 150px;
 }
 
-.imgs{
-    border-radius: 20px;
-    height: 150px;
-    width: 150px;
-    margin-left: 0;
-    margin-right: auto;
-    display: block;
-}
-.imgTxt{
-    // position: absolute;
-    // margin-top: -125px;
-    // margin-left: 184px;
-}
-
-.quadB{    
-    border-style: solid;
-    border-width: 1px;
-    border-color: $color4;
-    border-radius: 20px;
-    cursor: pointer;
+.aboutText{
     font-family: 'Gidole';
-    background-color: $color0;
+    color: $color4;
+    font-size: 30px;
+    letter-spacing: .2rem;
 }
 
-.pad{
-    padding: 0;
-    margin-left: 1%;
-    margin-top: 1%;
+.aboutTittle{
+    font-family: 'Allura'!important;
+    color: $color3;
+    font-size: 75px;
+}
+
+.about .aboutText img{
+    margin-top: 5%;
 }

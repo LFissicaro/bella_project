@@ -1,0 +1,61 @@
+$color0: #f7f7f7;
+$color1: #DEECC6;
+$color2: #BDD57A;
+$color3: #226900;
+$color4: #333333;
+
+.bar{
+  background-color: rgba(22, 22, 22, 0.712);
+  z-index: 1;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+.navbar{
+  margin-top: 15px;
+}
+
+.tittleContent{
+  text-align: center;
+  font-family: 'Gidole';
+  color: $color0;
+  font-size: 50px;
+}
+
+.icons{
+  margin-top:2%;
+  margin-left:20%;
+}
+
+.icon{
+  margin-left: 5%;
+  cursor: grab;
+}
+
+.link{
+    font-family: 'Gidole';
+    color: $color0;
+    display: flex;
+    text-align: center!important;
+    justify-content: center!important;
+}
+
+.link ul li{
+  margin-left: 15px;
+  display: inline-block;
+}
+
+.link ul li a{
+  text-decoration: none;
+  font-family: 'OpenSans';
+  font-size: 18px;
+  color: $color0;
+}
+
+.link ul li a:hover{
+  margin-left: 20px;
+  font-size: 18px;
+  cursor: grab;
+  color: $color2;
+}

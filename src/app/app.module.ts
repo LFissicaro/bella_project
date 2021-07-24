@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {CardModule} from 'primeng/card';
 import {GalleriaModule} from 'primeng/galleria';
+import { BarComponent } from './components/bar/bar.component';
+import { IconsComponent } from './components/icons/icons.component';
 
 
 
@@ -15,7 +17,9 @@ import {GalleriaModule} from 'primeng/galleria';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    BarComponent,
+    IconsComponent
   ],
   imports: [
     BrowserModule,
